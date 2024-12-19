@@ -1,0 +1,141 @@
+{
+	"info": {
+		"_postman_id": "ba96fd5b-b7fa-475e-8e8b-67a45ab6935d",
+		"name": "📄Mi api",
+		"description": "En este archivo encontrarás las consultas HTTP básicas en una aplicación de **Donantes de sangre**, en la que podrás realizar operaciones CRUD.\n\n**¿Qué puedes hacer con este ejemplo?**\n\n1. **Obtener todos los donantes**: Verás la lista completa de donantes.\n    \n2. **Consultar un donante específico por su ID**: Obtendrás los detalles de un donante en concreto.\n    \n3. **Insertar un nuevo donante**: Podrás añadir un nuevo donante.\n    \n4. **Modificar un donante existente**: Actualiza datos del donante.\n    \n5. **Eliminar un donante**: Elimina un donante de forma definitiva.",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "40360254"
+	},
+	"item": [
+		{
+			"name": "Obtener todos los Donantes",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/mi_api_donantes/donantes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mi_api_donantes",
+						"donantes",
+						""
+					]
+				},
+				"description": "Esta solicitud GET obtiene una lista de todos los donantes de sangre disponibles en el sistema.\n\n**Caso de uso:** Al pulsar enviar debería devolver la información de todos los donantes disponibles"
+			},
+			"response": []
+		},
+		{
+			"name": "Obtener un Donante por su ID",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/mi_api_donantes/donantes/{{id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mi_api_donantes",
+						"donantes",
+						"{{id}}"
+					]
+				},
+				"description": "Esta solicitud GET obtendría un donante específico basado en su ID.\n\n**Caso de uso:** Si se cambia el valor de `1` en la URL al ID del donante que quieres consultar y debería devolver los detalles de ese donante en concreto."
+			},
+			"response": []
+		},
+		{
+			"name": "Crear un nuevo Donante",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"id\": 8,\r\n        \"nombre\": \"Walter\",\r\n        \"apellido\": \"Ban\",\r\n        \"grupo_sanguineo\": \"B-\",\r\n        \"contacto\": \"walter@correo.com\",\r\n        \"ultima_donacion\": \"2023-09-28\"\r\n    }",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/mi_api_donantes/donantes/",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mi_api_donantes",
+						"donantes",
+						""
+					]
+				},
+				"description": "Esta solicitud POST crearía un nuevo donante.\n\n**Caso de uso:** En este caso, en el cuerpo de la solicitud se recibiría un JSON con los campos id, nombre, apellido, grupo_sanguineo, contacto, ultima_donacion."
+			},
+			"response": []
+		},
+		{
+			"name": "Actualizar un Donante por su ID",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n        \"nombre\": \"Cambiado\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost/mi_api_donantes/donantes/{{id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mi_api_donantes",
+						"donantes",
+						"{{id}}"
+					]
+				},
+				"description": "Esta solicitud PUT actualiza datos del donante basándose en su ID.\n\n**Caso de uso:** Si se cambia el valor de `{{id}}` al ID del post que quieres actualizar, editando datos se modificaría el contenido de ese donante concreto."
+			},
+			"response": []
+		},
+		{
+			"name": "Eliminar un Post por su ID",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": {
+					"raw": "http://localhost/mi_api_donantes/donantes/{{id}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"path": [
+						"mi_api_donantes",
+						"donantes",
+						"{{id}}"
+					]
+				},
+				"description": "Esta solicitud DELETE elimina un donante específico por su ID.\n\n**Caso de uso:** Si se cambia el valor de `{{id}}` al ID del donante que quieres eliminar, este se eliminaría al recibir y procesar la solicitud"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "id",
+			"value": "1",
+			"type": "default"
+		}
+	]
+}

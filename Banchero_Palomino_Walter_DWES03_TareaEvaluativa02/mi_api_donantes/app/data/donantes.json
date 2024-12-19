@@ -1,0 +1,58 @@
+[
+    {
+        "id": 1,
+        "nombre": "Pepi",
+        "apellido": "P\u00e9rez",
+        "grupo_sanguineo": "A+",
+        "contacto": "juan@correo.com",
+        "ultima_donacion": "2023-01-01"
+    },
+    {
+        "id": 2,
+        "nombre": "Mar\u00eda",
+        "apellido": "Garc\u00eda",
+        "grupo_sanguineo": "O-",
+        "contacto": "maria@correo.com",
+        "ultima_donacion": "2023-02-14"
+    },
+    {
+        "id": 3,
+        "nombre": "Pedro",
+        "apellido": "Rodr\u00edguez",
+        "grupo_sanguineo": "B+",
+        "contacto": "pedro@correo.com",
+        "ultima_donacion": "2023-03-20"
+    },
+    {
+        "id": 4,
+        "nombre": "Laura",
+        "apellido": "Mart\u00ednez",
+        "grupo_sanguineo": "AB-",
+        "contacto": "laura@correo.com",
+        "ultima_donacion": "2023-04-25"
+    },
+    {
+        "id": 5,
+        "nombre": "Ana",
+        "apellido": "L\u00f3pez",
+        "grupo_sanguineo": "A-",
+        "contacto": "ana@correo.com",
+        "ultima_donacion": "2023-05-30"
+    },
+    {
+        "id": 6,
+        "nombre": "Carlos",
+        "apellido": "S\u00e1nchez",
+        "grupo_sanguineo": "O+",
+        "contacto": "carlos@correo.com",
+        "ultima_donacion": "2023-06-10"
+    },
+    {
+        "id": 7,
+        "nombre": "Elena",
+        "apellido": "D\u00edaz",
+        "grupo_sanguineo": "B-",
+        "contacto": "elena@correo.com",
+        "ultima_donacion": "2023-07-15"
+    }
+]
